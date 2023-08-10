@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <style>
+      .picback {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        transition: background-color 0.3s;
+      }
+      .picback img {
+        margin: auto;
+      }
+      .btnback {
+        padding-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="picback">
+      <img src="./member-01.png" alt="pic" />
+    </div>
+    <div class="btnback">
+      <button onclick="changeBackgroundColor('red')">紅</button>
+      <button onclick="changeBackgroundColor('orange')">橙</button>
+      <button onclick="changeBackgroundColor('yellow')">黃</button>
+      <button onclick="changeBackgroundColor('green')">綠</button>
+      <button onclick="changeBackgroundColor('blue')">藍</button>
+      <button onclick="changeBackgroundColor('indigo')">靛</button>
+      <button onclick="changeBackgroundColor('purple')">紫</button>
+      <button onclick="changeBackgroundColor('pink')">粉</button>
+      <button onclick="changeBackgroundColor('black')">黑</button>
+      <button onclick="changeBackgroundColor('white')">白</button>
+    </div>
+  </body>
+  <script>
+    function changeBackgroundColor(color) {
+      var picDiv = document.querySelector(".picback");
+      picDiv.style.backgroundColor = color;
+    }
+  </script>
+</html>
